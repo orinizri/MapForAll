@@ -12,3 +12,8 @@
   width: 100vw;
   height: 50vh;
 } */
+
+.homepage-container{
+  display: flex;
+  flex-direction: row;
+}

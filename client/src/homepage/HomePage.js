@@ -4,10 +4,11 @@ import Map from "../map/Map";
 import "./homepage.css";
 import api from '../api/api';
 import { useState, useEffect } from 'react';
-
+import LocationPage from '../location/LocationPage.js'
 
 function Homepage() {
   const [places, setPlaces] = useState([]);
+  const [placeOnMap, setplaceOnMap] = useState([]);
 
   const getAllPlaces = async () => {
     try {
@@ -25,14 +26,19 @@ function Homepage() {
     getAllPlaces()
   }, [])
 
+  const bringPlaceFromMap = (val) => {
+    setplaceOnMap(val);
+    console.log(val)
+  }
 
 
-  return <>
-    <div>map website</div>
-    <div className="map-amal">
-      <Map data={places} />
+  return <div className='homepage-container'>
+    {/* <div>map website</div> */}
+    <div className="map">
+      <Map data={places}  placeOnMap={bringPlaceFromMap} />
     </div>
-  </>;
+    <LocationPage placeData={placeOnMap} /> 
+  </div>;
 }
 
 export default Homepage;
