@@ -1,3 +1,10 @@
 .location-img {
   border: none;
 }
+.location-marker {
+  border: 1px solid red;
+}
+.marker-btn {
+  background-color: transparent;
+  border: none;
+}

@@ -3,10 +3,10 @@ import Info from '../info/Info';
 import Post from '../post/Post';
 
 function LocationPage() {
-  return <div>
+  return (<div>
     <Post article=""/>
     <Info info=""/>
-  </div>;
+  </div>)
 }
 
 export default LocationPage;
