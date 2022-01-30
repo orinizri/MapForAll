@@ -1,23 +1,16 @@
-import React, { Component } from 'react';
-import PinDropIcon from '@mui/icons-material/PinDrop';
-import PushPinOutlinedIcon from '@mui/icons-material/PushPinOutlined';
+import React from 'react';
+import './btn.css'
+const BtnComponent = (props) => {
 
-export class BtnComponent extends Component {
-  render() {
+
+
     return (
-      <div className="Btn">
-        <PushPinOutlinedIcon color="secondary" fontSize="large" />
-        <br />
-        <br />
-        <PinDropIcon color="error" fontSize="large" />
-        <br />
-        <br />
-        <button>
-          <PinDropIcon color="secondary" fontSize="large" />
-        </button>
-      </div>
+        <div className="">
+            <button className="button-15" onClick={() => props.setSelectedLanguage(props.id)}>
+                {props.title}
+            </button>
+        </div>
     );
-  }
 }
 
 export default BtnComponent;

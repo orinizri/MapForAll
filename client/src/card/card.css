@@ -10,19 +10,21 @@
     text-align: center;
     font-size: 1rem;
     box-sizing: border-box;
-  }
-  .box:hover {
-      z-index:10;
-      /* transform: scale(1.3); */
-      background-color: rgba(161, 193, 221);
-      height:100vh;
-      margin-top: 1rem;
-      overflow-y: auto;
-    }
+}
 
-.box-container{
+.box:hover {
+    z-index: 10;
+    /* transform: scale(1.3); */
+    background-color: rgba(161, 193, 221);
+    height: 100vh;
+    margin-top: 1rem;
+
+    overflow-y: auto;
+}
+
+.box-container {
     display: flex;
     justify-content: center;
-    align-items: flex-start ;
-    
+    align-items: flex-start;
+
 }

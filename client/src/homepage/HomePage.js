@@ -35,7 +35,7 @@ function Homepage() {
   return <div className='homepage-container'>
     {/* <div>map website</div> */}
     <div className="map">
-      <Map data={places}  placeOnMap={bringPlaceFromMap} />
+      <Map data={places} placeOnMap={bringPlaceFromMap} />
     </div>
     <LocationPage placeData={placeOnMap} /> 
   </div>;

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import ReactMapGL, { Marker, Popup } from "react-map-gl";
 import api from "../api/api";
-import "./amalMap.css";
+// import "./amalMap.css";
 // import { placeDate } from "../data/skateboard-parks.json";
 // console.log(placeDate.features)
 export default function Map(props) {
@@ -47,7 +47,7 @@ export default function Map(props) {
   }
 
   return (
-    <div>
+    <div className="map-container">
       <ReactMapGL
         {...viewport}
         mapboxApiAccessToken={process.env.REACT_APP_MAP_TOKEN}
